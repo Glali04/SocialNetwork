@@ -103,3 +103,74 @@ form ul{
 form ul li{
     color: red;
 }
+
+.inner-container{
+    border: 1px solid green;
+    padding: 15px;
+}
+
+.inner-container.left-side {
+    text-align: center;
+}
+
+.inner-container img.profile{
+    width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.inner-container.right-side form{
+    display: flex;
+    height: 100px;
+}
+
+.inner-container.right-side textarea{
+    width: 85%;
+    border: 0px;
+    padding: 10px;
+    resize: none;
+    outline-color: green;
+}
+
+.inner-container.right-side form button{
+    width: 15%;
+    border: 0px;
+}
+
+#deleteProfile {
+    border: 2px solid red;
+    color: red;
+    padding: 5px 15px;
+}
+
+#allPostsWrapper .single-post{
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-top: 15px;
+    color: #000;
+}
+
+#allPostsWrapper .single-post .post-content{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+#allPostsWrapper .single-post .post-comments form{
+    height: 30px;
+    margin-top: 15px;
+}
+
+#allPostsWrapper .single-post .post-comments form input{
+    height: 85%;
+    padding: 0 10px;
+}
+
+#allPostsWrapper .single-post .post-comments form button{
+    height: 15%;
+    background-color: grey;
+}

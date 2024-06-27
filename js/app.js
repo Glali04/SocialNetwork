@@ -2,7 +2,7 @@ let session = new Session();
 session = session.getSession();
 
 if(session !== ""){
-    window.href = "hexa.html";
+    window.location.href = "hexa.html";
 }
 
 document.querySelector("#registration")
@@ -46,11 +46,19 @@ document.querySelector("#registerForm").addEventListener("submit", (e) => {
     e.preventDefault();
     if(validator.validationPassed()){
         let user = new User();
-        user.userName = document.querySelector("#userName").value;
+        user.username = document.querySelector("#userName").value;
         user.email = document.querySelector("#email").value;
         user.password = document.querySelector("#password").value;
         user.create();
     }else{
         alert("polja nisu dobro popunjena")
     }
+});
+document.querySelector("#loginForm").addEventListener("submit", (event) => {
+    event.preventDefault();
+    
+    let user = new User();
+    user.email = document.querySelector("#loginEmail").value;
+    user.password = document.querySelector("#loginPassword").value;
+    user.login();
 })
